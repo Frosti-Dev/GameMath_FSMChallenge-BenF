@@ -11,7 +11,7 @@ namespace FSM_Challenge
 
     enum EnemyState
     {
-        Idle, // not moving, not doing anything! Just chilling!
+        Idle, // not moving, not doing anything! Just chilling! (frosti ref)
         Shooting, // pew pew!!!!!
         WalkingRandomly, // walk North, South, East or West 
         WalkingInLine // Walk in the opposite direction of lastEnemyPos
@@ -65,65 +65,93 @@ namespace FSM_Challenge
 
         static EnemyState ProcessState(EnemyState state)
         {
-            // TODO: Use rand in the switch statement to determine transitions
             double rand = random.NextDouble();
+            int rand4 = random.Next(1, 5);
 
             switch (state)
             {
                 case EnemyState.Idle:
-                    //TODO: transition to other states based on rand
-                    //HINT: you can also return EnemyState.Idle sometimes to add more variation
                     
-                    return EnemyState.Shooting;
+                    if (rand * 100 <= 50)
+                    {
+                        return EnemyState.WalkingRandomly;
+                    }
+
+                    else if (rand * 100 <= 70)
+                    {
+                        return EnemyState.Shooting;
+                    }
+
+                    else
+                    {
+                        return EnemyState.Idle;
+                    }
 
                 case EnemyState.Shooting:
                     Shoot();
-                    
-                    
-                    return EnemyState.WalkingRandomly;
-                case EnemyState.WalkingRandomly:
-                    //TODO: move up, down, left or right randomly
 
-                    if(rand * 100 <= 25) // move up
+                    if (rand * 100 <= 50)
+                    {
+                        return EnemyState.Idle;
+                    }
+
+                    else
+                    {
+                        return EnemyState.WalkingRandomly;
+                    }
+
+                case EnemyState.WalkingRandomly:
+
+                    if (rand4 == 1) // move up
                     {
                         Move(0, -1);
                     }
 
-                    else if (rand * 100 <= 50) // move down
+                    else if (rand4 == 2) // move down
                     {
                         Move(0, 1);
                     }
 
-                    else if (rand * 100 <= 75) // move left
+                    else if (rand4 == 3) // move left
                     {
-                        Move(-1, 0); 
+                        Move(-1, 0);
                     }
 
                     else // move right
                     {
-                        Move(1, 0); 
+                        Move(1, 0);
                     }
 
+                    if(rand * 100 <= 50)
+                    {
                         return EnemyState.WalkingInLine;
-                    
+                    }
+
+                    else if(rand * 100 <= 80)
+                    {
+                        return EnemyState.WalkingRandomly;
+                    }
+
+                    else
+                    {
+                        return EnemyState.Shooting;
+                    }
+
                 case EnemyState.WalkingInLine:
-                    //TODO: move player in direction they previously moved.
-                    //HINT: there is a lastEnemyPos variable that tells you the previous position!
-
-                    Debug.WriteLine($"Current: {enemyPos}");
-
-                    Debug.WriteLine($"Last: {lastEnemyPos}");
+                    //Debug.WriteLine($"Current: {enemyPos}");
+                    //Debug.WriteLine($"Last: {lastEnemyPos}");
+                    //Debug.WriteLine($"Rand: {rand4}");
 
                     if (enemyPos.Item1 == lastEnemyPos.Item1)
                     {
-                        if(enemyPos.Item2 > lastEnemyPos.Item2)
+                        if (enemyPos.Item2 > lastEnemyPos.Item2)
                         {
-                            Move(0,1);
+                           Move(0, 1);
                         }
 
                         else
                         {
-                            Move(0,-1);
+                           Move(0, -1);
                         }
                     }
 
@@ -131,18 +159,35 @@ namespace FSM_Challenge
                     {
                         if (enemyPos.Item1 > lastEnemyPos.Item1)
                         {
-                            Move(1,0);
+                           Move(1, 0);
                         }
 
                         else
                         {
-                            Move(-1,0);
+                           Move(-1, 0);
                         }
                     }
-                    return EnemyState.Idle;
+                   
+                    if(rand * 100 <= 50)
+                    {
+                        return EnemyState.WalkingRandomly;
+                    }
+
+                    else if (rand * 100 <= 90)
+                    {
+                        return EnemyState.Shooting;
+                    }
+
+                    else
+                    {
+                        return EnemyState.WalkingInLine;
+                    }
+
+
                 default:
-                    return EnemyState.Idle; // this case should never happen
-            }
+
+                   return EnemyState.Idle; // this case should never happen
+                }
 
         }
 
