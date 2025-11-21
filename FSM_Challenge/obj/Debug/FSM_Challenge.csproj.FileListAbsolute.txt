@@ -1,0 +1,22 @@
+C:\Users\W0282611\Documents\FSM_Challenge\FSM_Challenge\bin\Debug\FSM_Challenge.exe.config
+C:\Users\W0282611\Documents\FSM_Challenge\FSM_Challenge\bin\Debug\FSM_Challenge.exe
+C:\Users\W0282611\Documents\FSM_Challenge\FSM_Challenge\bin\Debug\FSM_Challenge.pdb
+C:\Users\W0282611\Documents\FSM_Challenge\FSM_Challenge\obj\Debug\FSM_Challenge.csproj.AssemblyReference.cache
+C:\Users\W0282611\Documents\FSM_Challenge\FSM_Challenge\obj\Debug\FSM_Challenge.csproj.CoreCompileInputs.cache
+C:\Users\W0282611\Documents\FSM_Challenge\FSM_Challenge\obj\Debug\FSM_Challenge.exe
+C:\Users\W0282611\Documents\FSM_Challenge\FSM_Challenge\obj\Debug\FSM_Challenge.pdb
+C:\Users\W0282611\Documents\FSM_Challenge\FSM_Challenge\obj\Debug\FSM_Challenge.exe.config
+C:\school\programming code\FSM_Challenge-main\FSM_Challenge\bin\Debug\FSM_Challenge.exe.config
+C:\school\programming code\FSM_Challenge-main\FSM_Challenge\bin\Debug\FSM_Challenge.exe
+C:\school\programming code\FSM_Challenge-main\FSM_Challenge\bin\Debug\FSM_Challenge.pdb
+C:\school\programming code\FSM_Challenge-main\FSM_Challenge\obj\Debug\FSM_Challenge.csproj.AssemblyReference.cache
+C:\school\programming code\FSM_Challenge-main\FSM_Challenge\obj\Debug\FSM_Challenge.csproj.CoreCompileInputs.cache
+C:\school\programming code\FSM_Challenge-main\FSM_Challenge\obj\Debug\FSM_Challenge.exe
+C:\school\programming code\FSM_Challenge-main\FSM_Challenge\obj\Debug\FSM_Challenge.pdb
+C:\school\programming code\GameMath_FSMChallenge-BenF\FSM_Challenge\bin\Debug\FSM_Challenge.exe.config
+C:\school\programming code\GameMath_FSMChallenge-BenF\FSM_Challenge\bin\Debug\FSM_Challenge.exe
+C:\school\programming code\GameMath_FSMChallenge-BenF\FSM_Challenge\bin\Debug\FSM_Challenge.pdb
+C:\school\programming code\GameMath_FSMChallenge-BenF\FSM_Challenge\obj\Debug\FSM_Challenge.csproj.AssemblyReference.cache
+C:\school\programming code\GameMath_FSMChallenge-BenF\FSM_Challenge\obj\Debug\FSM_Challenge.csproj.CoreCompileInputs.cache
+C:\school\programming code\GameMath_FSMChallenge-BenF\FSM_Challenge\obj\Debug\FSM_Challenge.exe
+C:\school\programming code\GameMath_FSMChallenge-BenF\FSM_Challenge\obj\Debug\FSM_Challenge.pdb
